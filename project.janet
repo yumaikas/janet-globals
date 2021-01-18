@@ -4,5 +4,5 @@
 )
 
 (phony "install" []
-    (copy "globals.janet" JANET_LIBPATH)
+    (copy "globals.janet" (os/getenv "JANET_PATH"))
 )
